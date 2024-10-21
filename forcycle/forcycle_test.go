@@ -14,8 +14,8 @@ func TestMinSubArrayLen(t *testing.T) {
 		{4, []int{2, 1, 2, 1}, 3},
 	}
 
-	for i, v := range tests {
-		if MinSubArrayLen(v.target, v.nums) != v.expected {
+	for i, values := range tests {
+		if MinSubArrayLen(values.target, values.nums) != values.expected {
 			t.Errorf("failed %v", i)
 		}
 	}
